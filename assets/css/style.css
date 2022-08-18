@@ -93,7 +93,7 @@ img {
     float: left;
     width: 300px;
     text-align: center;
-    margin: 50px 50px 30px 50px;
+    margin: 50px 50px 30px 75px;
 }
 
 /* Move the paragraphs in the 'About Me' section down a little bit. */
@@ -104,7 +104,7 @@ img {
 /* Style the paragraphs. */
 p {
     font-size: 18px;
-    margin: 0 50px 20px 50px;
+    margin: 0 75px 20px 75px;
 }
 
 /* Style the grid container to have two columns. */
@@ -127,6 +127,11 @@ p {
 /* Center the figures. */
 figure {
     text-align: center;
+}
+
+/* Style the videos */
+iframe {
+    width: 80%;
 }
 
 /* Move the figcaptions down a little bit. */
@@ -169,5 +174,5 @@ ul {
 /* Style the copyright */
 #copyright {
     margin: auto;
-    padding-left: 15%;
+    padding-left: 100px;
 }
