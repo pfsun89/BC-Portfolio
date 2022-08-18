@@ -1,0 +1,173 @@
+/* Set the box-sizing model to border-box for all elements in the document. */
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+/* Style the body. */
+body {
+    margin: 0;
+    font-family: "Open Sans", georgia, sans-serif;
+    /* Free stock photo taken from Public Domain Pictures (https://www.publicdomainpictures.net/en/view-image.php?image=196585&picture=circuit-board) by Flash Alexander. */
+    background-image: url(../images/circuit_board.jpg);
+}
+
+/* Style the header. */
+header {
+    width: 100%;
+}
+
+/* Style the articles. */
+article {
+    width: 70%;
+    background-color: #eee;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+/* Style the sections. */
+section {
+    margin: 50px 20px;
+}
+
+/* Move navigation bar over. */
+#links, button {
+    padding-right: 25%;
+}
+
+/* Style the nav-links. */
+.nav-link {
+    font-size: 1.5vw;
+}
+
+/* Style the background color in the header. */
+nav {
+    background-image: linear-gradient(to right, #d2c4ff, #a792d3, #7f63a8, #59357e, #350455);
+}
+
+/* Style h1. */
+h1 {
+    color: #350455;
+    font-family: "Roboto Mono", Arial, monospace;
+    font-weight: 600;
+    font-size: 5vw;
+    padding-left: 15%;
+    text-shadow: .05em .05em .1em #333;
+}
+
+/* Style h2. */
+h2 {
+    font-family: "Roboto Mono", Arial, monospace;
+    font-weight: 600;
+    font-size: 3vw;
+    padding: 50px;
+    text-align: center;
+    background-color: #000;
+    color: #c0edc2;
+    text-shadow: .05em .05em .1em #358b0f;
+}
+
+/* Style h3. */
+h3 {
+    font-family: "Roboto Mono", Arial, monospace;
+    font-weight: 600;
+    font-size: 2vw;
+    margin-left: 9%;
+    color: #350455;
+    text-shadow: .05em .05em .1em #358b0f;
+}
+
+/* Style the image. */
+img {
+    width: 75%;
+    border: 1px solid #333;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #333;
+}
+
+/* Style the figure containing my profile picture. */
+#avatar {
+    float: left;
+    width: 300px;
+    text-align: center;
+    margin: 50px 50px 30px 50px;
+}
+
+/* Move the paragraphs in the 'About Me' section down a little bit. */
+#intro {
+    margin-top: 50px;
+}
+
+/* Style the paragraphs. */
+p {
+    font-size: 18px;
+    margin: 0 50px 20px 50px;
+}
+
+/* Style the grid container to have two columns. */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+/* Style column1 in the grid layout. */
+.column1 {
+    margin: 20px 50px;
+}
+
+/* Style column2 in the grid layout. */
+.column2 {
+    margin: 20px 50px;
+}
+
+/* Center the figures. */
+figure {
+    text-align: center;
+}
+
+/* Move the figcaptions down a little bit. */
+figcaption {
+    margin-top: 10px;
+}
+
+/* Style the paragraphs in the portfolio. */
+.description {
+    font-size: 18px;
+    margin: 0 20px 20px 20px;
+}
+
+/* Style the anchor tags. */
+.projects {
+    margin: 20px;
+    font-size: 18px;
+}
+
+/* Style the unordered lists. */
+ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/* Move the 'Concepts' section down a little bit. */
+#lessons {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Style the second headings in the home page. */
+.concepts {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Style the copyright */
+#copyright {
+    margin: auto;
+    padding-left: 15%;
+}

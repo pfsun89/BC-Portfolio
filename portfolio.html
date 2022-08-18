@@ -12,15 +12,15 @@
     <!-- Created and added favicon image. -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
     <!-- Link to CSS file -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- Link to Bootstrap CSS file. Downloaded from https://getbootstrap.com/docs/4.0/getting-started/download/. -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Link to Google Fonts. Used Roboto Mono and Open Sans from https://fonts.google.com/. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@700&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -37,23 +37,26 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="mr-auto">
                 </div>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html" target="_blank">Portfolio</a>
-                    </li>
-                </ul>
+                <div id="links">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html" target="_blank">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <!-- This is the article containing content and information about my 5 previous projects. -->
     <article>
+        <h2>My Coding Projects</h2>
         <!-- Project 1. -->
         <section>
-            <h2></h2>
+            <h3>Portfolio/Resume</h3>
             <div class="grid-container">
                 <div class="column1">
                     <figure>
@@ -62,19 +65,19 @@
                     </figure>
                 </div>
                 <div class="column2">
-                    <p>This is my portfolio or resume web page. It will include: my name, education, work experience,
+                    <p class="description" class="description">This is my portfolio or resume web page. It will include: my name, education, work experience,
                         career goal, interests, and favorite websites. I plan on updating this project as I continue to
                         work on more coding projects. The main purpose is to practice writing HTML code, become more
                         familiar with HTML structure and tags, and display some information about me. Though I did add
                         some CSS for fun.</p>
-                    <a href="http://pfsun.us/batech189/project1/" target="_blank">My Portfolio</a>
+                    <a class="projects" href="http://pfsun.us/batech189/project1/" target="_blank">My Portfolio</a>
                 </div>
             </div>
         </section>
 
         <!-- Project 2. -->
         <section>
-            <h2></h2>
+            <h3>Gaming Gallery</h3>
             <div class="grid-container">
                 <div class="column1">
                     <figure>
@@ -83,19 +86,19 @@
                     </figure>
                 </div>
                 <div class="column2">
-                    <p>The purpose of this project is to create a gallery of games I have been playing recently and test
+                    <p class="description">The purpose of this project is to create a gallery of games I have been playing recently and test
                         out some of the things I have been learning in CSS. The project will start out as a single web
                         page and showcase 5 games I have some experience in. I will include an image, title, and
                         description for each game. At the top, I will include the title of the page and a few links to
                         navigate to each corresponding game on the page.</p>
-                    <a href="http://pfsun.us/batech189/project2/" target="_blank">Gaming Gallery</a>
+                    <a class="projects" href="http://pfsun.us/batech189/project2/" target="_blank">Gaming Gallery</a>
                 </div>
             </div>
         </section>
 
         <!-- Project 3. -->
         <section>
-            <h2></h2>
+            <h3>Favorite City</h3>
             <div class="grid-container">
                 <div class="column1">
                     <figure>
@@ -104,18 +107,18 @@
                     </figure>
                 </div>
                 <div class="column2">
-                    <p>This project is about providing information on a favorite city I have either visited or would
+                    <p class="description">This project is about providing information on a favorite city I have either visited or would
                         like to visit. I chose Hong Kong because it has been several years since I had last visited, and
                         I remember enjoying my time there. I described a few tourist attractions and included images,
                         links, and some interesting facts.</p>
-                    <a href="http://pfsun.us/batech189/project3/" target="_blank">Favorite City</a>
+                    <a class="projects" href="http://pfsun.us/batech189/project3/" target="_blank">Favorite City</a>
                 </div>
             </div>
         </section>
 
         <!-- Project 4. -->
         <section>
-            <h2></h2>
+            <h3>E-Book Website Layout</h3>
             <div class="grid-container">
                 <div class="column1">
                     <figure>
@@ -124,18 +127,18 @@
                     </figure>
                 </div>
                 <div class="column2">
-                    <p>This is a simple multiple-page website using an electronic book layout, a navigation feature, and
+                    <p class="description">This is a simple multiple-page website using an electronic book layout, a navigation feature, and
                         an external CSS style sheet. I chose to work with <cite>Alice in Wonderland</cite> by Lewis
                         Carroll, and displayed 3 chapters with 1 image each. My main focus was to properly link the all
                         the files together and have the entire website function smoothly.</p>
-                    <a href="http://pfsun.us/batech189/project4/" target="_blank">E-Book Website Layout</a>
+                    <a class="projects" href="http://pfsun.us/batech189/project4/" target="_blank">E-Book Website Layout</a>
                 </div>
             </div>
         </section>
 
         <!-- Project 5. -->
         <section>
-            <h2></h2>
+            <h3>Multimedia</h3>
             <div class="grid-container">
                 <div class="column1">
                     <figure>
@@ -144,10 +147,10 @@
                     </figure>
                 </div>
                 <div class="column2">
-                    <p>This is another simple web page where I practiced embedding a few YouTube videos and use web
+                    <p class="description">This is another simple web page where I practiced embedding a few YouTube videos and use web
                         fonts. I chose funny cat videos as my topic where the main niche was to see how a group cats do
                         against a variety of obstacle courses. I also included a short description for each video.</p>
-                    <a href="http://pfsun.us/batech189/project5/" target="_blank">Cat Challenges</a>
+                    <a class="projects" href="http://pfsun.us/batech189/project5/" target="_blank">Cat Challenges</a>
                 </div>
             </div>
         </section>
@@ -155,7 +158,28 @@
 
     <!-- Footer -->
     <footer>
-        <p><small>&copy; 2022 by Paul Sun for BATECH 189</small></p>
+        <!-- Navigation bar -->
+        <!-- Used Bootstrap from https://getbootstrap.com/docs/4.0/components/navbar/ to design functionality and style the navigation bar. -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <p id="copyright"><small>&copy; 2022 by Paul Sun for BATECH 189</small></p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto">
+                </div>
+                <div id="links">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html" target="_blank">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </footer>
 
     <!-- Link to Bootstrap JavaScript file. -->

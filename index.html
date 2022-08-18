@@ -11,16 +11,16 @@
     <title>Home</title>
     <!-- Created and added favicon image. -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <!-- Link to CSS file -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <!-- Link to Bootstrap CSS file. Downloaded from https://getbootstrap.com/docs/4.0/getting-started/download/. -->
+    <!-- Link to Bootstrap CSS file. Downloaded both CSS and JS from https://getbootstrap.com/docs/4.0/getting-started/download/. -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Link to Google Fonts. Used Roboto Mono and Open Sans from https://fonts.google.com/. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@700&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     <header>
         <!-- Navigation bar -->
         <!-- Used Bootstrap from https://getbootstrap.com/docs/4.0/components/navbar/ to design functionality and style the navigation bar. -->
-        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #333">
+        <nav class="navbar navbar-expand-md navbar-dark">
             <h1>Paul Sun</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -37,14 +37,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="mr-auto">
                 </div>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html" target="_blank">Portfolio</a>
-                    </li>
-                </ul>
+                <div id="links">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html" target="_blank">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -52,7 +54,7 @@
     <!-- This is the article with information about me. -->
     <article id="aboutMe">
         <h2>About Me</h2>
-        <figure>
+        <figure id="avatar">
             <img src="assets/images/avatar.jpg" alt="Profile Picture">
             <ul>
                 <li>Warehouse Associate at Amazon Fresh</li>
@@ -61,7 +63,7 @@
                         target="_blank">lostandconfusedstudent@gmail.com</a></li>
             </ul>
         </figure>
-        <p>I am currently a full-time student working full time as a warehouse associate. I&apos;m taking classes at
+        <p id="intro">I am currently a full-time student working full time as a warehouse associate. I&apos;m taking classes at
             Bellevue College to learn about web development, and I&apos;m planning on earning a Certificate of
             Accomplishment in Web Content Management. As for work experience, I have been a warehouse associate for
             almost 8 years at the time of writing this. My main responsibility was to pick and pack customer orders
@@ -91,10 +93,10 @@
     </article>
 
     <!-- This is the article about the concepts I started learning about. -->
-    <!-- I used Screencastify to record the videos, but they are lacking features such as viewing fullscreen because this is a website outside of YouTube. -->
-    <article id="concepts">
-        <h2>Three of the Most Important Concepts I have Learned in BATECH 189</h2>
-        <h3>Preparing and Planning a Website</h3>
+    <!-- I used Screencastify to record the videos, but they are lacking features such as viewing fullscreen because this is a website outside of YouTube. This is a free Chrome extension from https://www.screencastify.com/. -->
+    <article id="lessons">
+        <h2>Three Important Concepts</h2>
+        <h3 class="concepts">Preparing and Planning a Website</h3>
         <p>We all know that good practice and hands-on experience can help us improve our skills and become the best we
             can be at what we do, but when working on a long-term project, it may be a good idea to incorporate a
             planning phase into the process. Planning allows coders to develop a strategy and figure out things like
@@ -104,7 +106,7 @@
             <iframe src="https://drive.google.com/file/d/1nR-sb74KehBu_X7pogZISWAn8J454FWc/preview" width="960"
                 height="720"></iframe>
         </figure>
-        <h3>Semantic HTML</h3>
+        <h3 class="concepts">Semantic HTML</h3>
         <p>Semantic HTML is all about the syntax. It&apos;s used for defining sections or chunks of content for web
             pages. This facilitates the maintenance and interpretation of the author&apos;s content. At a first glance,
             this may seem a bit boring, but it&apos;s important to understand the basics and fundamentals before getting
@@ -113,7 +115,7 @@
             <iframe src="https://drive.google.com/file/d/1k31ylBCmqf4X5xUKzS_YjtMTRVmp6oel/preview" width="960"
                 height="720"></iframe>
         </figure>
-        <h3>User Experience</h3>
+        <h3 class="concepts">User Experience</h3>
         <p>The main idea of user experience is to think about using the web page from the target audience&apos;s
             perspective. Goals can include maximizing the positivity and meaningfulness of a user&apos;s visit to
             establish potential customer loyalty, and improving the users&apos; engagement with the website. Both
@@ -124,7 +126,28 @@
 
     <!-- Footer -->
     <footer>
-        <p><small>&copy; 2022 by Paul Sun for BATECH 189</small></p>
+        <!-- Navigation bar -->
+        <!-- Used Bootstrap from https://getbootstrap.com/docs/4.0/components/navbar/ to design functionality and style the navigation bar. -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <p id="copyright"><small>&copy; 2022 by Paul Sun for BATECH 189</small></p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto">
+                </div>
+                <div id="links">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html" target="_blank">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </footer>
 
     <!-- Link to Bootstrap JavaScript file. -->
