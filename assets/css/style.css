@@ -41,6 +41,12 @@ section {
 /* Style the nav-links. */
 .nav-link {
     font-size: 1.5vw;
+    color: #d2c4ff;
+    margin-top: 20px;
+}
+
+.nav-link:hover {
+    color: #c0edc2;
 }
 
 /* Style the background color in the header. */
@@ -54,8 +60,21 @@ h1 {
     font-family: "Roboto Mono", Arial, monospace;
     font-weight: 600;
     font-size: 5vw;
-    padding-left: 15%;
+    padding: .5em 0 .5em 30%;
     text-shadow: .05em .05em .1em #333;
+}
+
+.navbar {
+    float: right;
+    padding: 1em 0 1em 0;
+    font-family: "Roboto Mono", Arial, monospace;
+    text-shadow: .05em .05em .1em #333;
+    font-weight: 600;
+    font-size: 5vw;
+}
+
+.nav-item {
+    display: inline-block;
 }
 
 /* Style h2. */
@@ -80,12 +99,24 @@ h3 {
     text-shadow: .05em .05em .1em #358b0f;
 }
 
+#aboutMe {
+    margin: -3em auto auto auto;
+}
+
+#myProjects {
+    margin: -3em auto auto auto;
+}
+
 /* Style the image. */
 img {
     width: 75%;
     border: 1px solid #333;
     border-radius: 20px;
     box-shadow: 2px 2px 5px #333;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Style the figure containing my profile picture. */
@@ -132,6 +163,7 @@ figure {
 /* Adjust margins for links to the videos */
 .video {
     margin: 75px;
+    font-size: 18px;
 }
 
 /* Move the figcaptions down a little bit. */
@@ -173,8 +205,18 @@ ul {
 
 /* Style the copyright */
 #copyright {
-    margin: auto;
-    
+    padding: 100px 0 0 23%;
+}
+
+.navbar2 {
+    text-shadow: .05em .05em .1em #333;
+    font-family: "Roboto Mono", Arial, monospace;
+    font-weight: 600;
+    font-size: 5vw;
+}
+
+footer {
+    width: 100%;
 }
 
 /* Media queries for fixing element positions when adjusting screen size. */
@@ -201,9 +243,7 @@ ul {
         padding: 0;
     }
 
-    h1 {
-        font-size: 26px;
-    }
+
 
     h2 {
         font-size: 24px;
@@ -217,7 +257,7 @@ ul {
     }
 
     #copyright {
-        padding: 0;
+        padding: 1.5em;
         margin: auto;
     }
 
