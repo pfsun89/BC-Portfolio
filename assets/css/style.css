@@ -34,7 +34,7 @@ section {
 }
 
 /* Move navigation bar over. */
-#links, button {
+.links, button {
     padding-right: 25%;
 }
 
@@ -111,7 +111,7 @@ p {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 1vw;
 }
 
 /* Style column1 in the grid layout. */
@@ -129,9 +129,9 @@ figure {
     text-align: center;
 }
 
-/* Style the videos */
-iframe {
-    width: 80%;
+/* Style links to the videos */
+.video {
+    margin: 75px;
 }
 
 /* Move the figcaptions down a little bit. */
@@ -174,5 +174,60 @@ ul {
 /* Style the copyright */
 #copyright {
     margin: auto;
-    padding-left: 100px;
+    
+}
+
+/* Media queries for fixing element positions when adjusting screen size. */
+@media only screen and (max-width: 1000px) {
+
+    article {
+        width: 90%;
+    }
+
+    .grid-container {
+        display: block;
+    }
+
+    img {
+        width: 300px;
+        padding: 0;
+        margin: auto;
+    }
+
+    .avatar {
+        float: none;
+        display: block;
+        margin: auto;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 24px;
+        padding: 25px;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 20px;
+        margin: auto;
+    }
+
+    #copyright {
+        padding: 0;
+        margin: auto;
+    }
+
+    .links, button {
+        float: right;
+        padding: 0;
+        margin: auto;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
 }
